@@ -1,0 +1,297 @@
+body{
+    margin: 0px;   /* because body have already some margin in it */
+}
+
+
+/* Body Header*/
+
+#body-header{
+    background-image: url(static/Donut.jpeg);
+    width: auto;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Horizontal List*/
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    /* padding-top: 1rem; */
+    margin: 0px;
+    
+}
+.horizontal-list li{
+    display: inline-block;
+    padding: 0px 40px 0px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.nav-menu li a{
+    color: rgb(99, 22, 73);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.5s;
+}
+.nav-menu li a:hover{
+    color: rgb(125, 20, 223);
+}
+
+
+
+/* Name and Social Icons*/
+
+
+#name-social-container {
+    margin-top: 20vh;
+}
+#my-name{
+    color: rgb(88, 24, 90);
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    margin-top: 7rem;
+    text-align: center;
+}
+
+/* Font awesome icons */
+
+.social-icons li a i{
+    text-decoration: none;
+    color: rgb(65, 18, 65);
+    font-size: 1.5rem;
+    padding: 10px;  /* it will center the icon inside the round hover */
+    border-radius: 50%; /* to round the circle */
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(214, 31, 159, 0.3); /* to create the round hover */
+    transition: 0.5s;
+}
+
+
+
+/* About section & Profile photo */
+
+
+#about{
+    width: 100%;
+    height: auto;
+    position: relative; /*To visible the dp or it will overlaping with the donut image.it will work  */
+}
+
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;   /* to bring the image to center */
+    margin-top: -17vh;  /* to bring the image little up */
+    position: relative; 
+}
+#my-image img{
+    height: 100%;     /* this height and width 100% to relative unit  p.t.o. */ 
+    width: 100%;      /*it will set the height and width according to parent */ 
+    border-radius: 50%;  /*to round the image */
+    /* position: relative;   it will work */
+    border: 3px solid white; /* to create a border around the dp*/
+    box-shadow: 1px 1px 10px 2px lightgrey; /* to create a blury circle in the background of the dp*/
+}
+
+/* About Para */
+
+#about-para p{
+    margin: auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-top: 55px;
+    width: 75%;
+    line-height: 30px;
+    word-spacing: 4px;
+    color: lightseagreen
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color: #b3b3b329;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+/* Skill Logo */
+
+
+.section-heading{
+    width: auto;
+    font-size: 2.2rem;
+    color: rgb(110, 36, 88);
+    margin-top: 3rem;
+}
+
+
+/* Skill Items */
+
+.skills-display{
+    width: 75%;
+    padding: 10px;
+    /* margin: auto; */
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+.skill-progress{
+    display: inline-block;
+}
+.skill-percentage{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    /* border-radius: 1rem; */
+    border: 2px black solid;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    overflow: hidden;
+    margin: 25px;
+}
+.skill-progress > div{
+    /* border-radius: 20px 0px 0px 20px ; */
+    border-radius: 1.1rem;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.margin{
+    margin-bottom: 75px;
+}
+.c{
+    width: 80%;
+    height: inherit;
+    background-color: #2857a4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.html{
+    width: 80%;
+    height: inherit;
+    background-color: #ec4d1c;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.css{
+    width: 90%;
+    height: inherit;
+    background-color: #0b8176;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.js{
+    width: 85%;
+    height: inherit;
+    background-color: #93738c;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.mdb{
+    width: 65%;
+    height: inherit;
+    background-color: rgb(155, 190, 72);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.ejs{
+    width: 75%;
+    height: inherit;
+    background-color: rgb(190, 139, 72);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.rjs{
+    width: 75%;
+    height: inherit;
+    background-color: rgb(190, 72, 184);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.njs{
+    width: 70%;
+    height: inherit;
+    background-color: rgb(72, 186, 190);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+
+
+
